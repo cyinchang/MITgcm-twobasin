@@ -1,0 +1,125 @@
+# *********************
+# External Forcing Data
+# *********************
+ &EXF_NML_01
+# exf_debugLev      = 3,
+# useExfCheckRange  = .FALSE.,
+# useStabilityFct_overIce=.TRUE.,
+ snow_emissivity   = 0.0,
+ ice_emissivity    = 0.0,
+ ocean_emissivity  = 0.0,
+ cdalton           = 0.0,
+ exf_iceCe         = 0.0,
+# atmrho            = 1.22,
+# humid_fac         = .608,
+# ht                = 10.,
+# exf_albedo        = 0.066,
+#readStressOnAgrid = .TRUE.,
+# readStressOnCgrid = .TRUE.,
+# exf_monFreq       = 0.,
+ repeatPeriod      = 0.,
+# exf_iprec         = 64,
+ useSensFluxRestore =.TRUE.,
+ TauSensFluxRestore = 25.0,
+ &
+
+# *********************
+ &EXF_NML_02
+#
+ atempstartdate1   = 00010101,
+# atempstartdate2   = 180000,
+ atempperiod       = 0.0,
+#
+# aqhstartdate1     = 00010101,
+# aqhstartdate2     = 180000,
+# aqhperiod         = 2592000.0,
+#
+# lwfluxstartdate1   = 00010101,
+# atempstartdate2   = 180000,
+# lwfluxperiod       = 0.0,
+#
+# swfluxstartdate1   = 00010101,
+# atempstartdate2   = 180000,
+# swfluxperiod       = 0.0,
+#
+ precipstartdate1  = 00010101,
+# precipstartdate2  = 180000,
+ precipperiod      = 0.0,
+#
+ snowprecipstartdate1= 00010101,
+# snowprecipstartdate2= 180000,
+ snowprecipperiod    = 0.0,
+#
+# runoffstartdate1  = 00010115,
+# runoffstartdate2  = 180000,
+# runoffperiod      = 2592000.0,
+#
+ evapstartdate1  = 00010101,
+# evapstartdate2  = 180000,
+ evapperiod      = 0.0,
+#
+ uwindstartdate1   = 00010101,
+# uwindstartdate2   = 180000,
+ uwindperiod       = 0.0,
+#
+ vwindstartdate1   = 00010101,
+# vwindstartdate2   = 180000,
+ vwindperiod       = 0.0,
+#
+# ustressstartdate1 = 00010115,
+# ustressstartdate2 = 180000,
+# ustressperiod     = 2592000.0,
+#
+# vstressstartdate1 = 00010115,
+# vstressstartdate2 = 180000,
+# vstressperiod     = 2592000.0,
+#
+# wspeedstartdate1  = 00010115,
+# wspeedstartdate2  = 180000,
+# wspeedperiod      = 2592000.0,
+#
+ swdownstartdate1  = 00010101,
+# swdownstartdate2  = 180000,
+ swdownperiod      = 0.0,
+#
+ lwdownstartdate1  = 00010101,
+# lwdownstartdate2  = 180000,
+ lwdownperiod      = 0.0,
+#
+# climsssstartdate1  = 00010115,
+# climsssstartdate2  = 180000,
+# climsssperiod      = 2592000.0,
+#
+# climsststartdate1  = 00010115,
+# climsststartdate2  = 180000,
+# climsstperiod      = 2592000.0,
+#
+ atempfile         = 'T_air.bin',
+# aqhfile           = 'core_q_air_cs32.bin',
+# ustressfile       = 'trenberth_taux.bin',
+# vstressfile       = 'trenberth_tauy.bin',
+ uwindfile         = 'wind_x.bin',
+ vwindfile         = 'wind_y.bin',
+# wspeedfile        = 'core_wndSpd_cs32.bin',
+ precipfile        = 'precip.bin',
+ snowprecipfile    = 'snowprecip.bin',
+ evapfile          = 'evap.bin'
+ lwdownfile        = 'LW_flux.bin',
+ swdownfile        = 'SW_flux.bin',
+# runoffFile        = 'core_rnof_1_cs32.bin'
+# runoftempFile     = 'runoff_temperature.bin'
+# climsstfile       = 'lev_surfT_cs_12m.bin',
+# climsssfile       = 'lev_surfS_cs_12m.bin',
+#
+ &
+
+# *********************
+ &EXF_NML_03
+ aqhconst         = 0.0,
+ lwdownconst      = 0.0,
+ swdownconst      = 0.0,
+ &
+
+# *********************
+ &EXF_NML_04
+ &
